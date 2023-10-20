@@ -6,6 +6,6 @@ app = Flask(__name__)
 def hello_world():
     return "<p> Hello World! </p>"
 
-@app.route("/references")
+@app.route("/quick-start")
 def references():
-    return render_template("references.html")
+    return render_template("quick_start_blog.html")
