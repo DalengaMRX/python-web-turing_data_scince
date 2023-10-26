@@ -3,9 +3,9 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
-    return "<p> Hello World! </p>"
+def index():
+    return render_template("index.html")
 
-@app.route("/quick-start")
+@app.route("/quick-start.html")
 def references():
-    return render_template("quick_start_blog.html")
+    return render_template("quick-start.html")
